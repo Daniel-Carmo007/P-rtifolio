@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+header>a {
+    height: 50px;
+}
+
+.conteiner {
+    display: grid;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(38, 84, 148);
+    grid-template-rows: repeat(1, 20%);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+        "box1 box2 box2 box3 box3 box4 box4 box4 box5"
+    ;
+}
+
+
+
+header a {
+    color: rgba(135, 135, 135, 0.572);
+}
+
+header a:hover {
+
+    color: rgb(0, 17, 201);
+}
+
+
+.box1 {
+    grid-area: box1;
+    text-decoration: none;
+
+}
+
+.box2 {
+    grid-area: box2;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.box3 {
+    grid-area: box3;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 {
+    grid-area: box4;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.box5 {
+    display: flex;
+    grid-area: box5;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(38, 84, 148);
+    grid-template-rows: repeat(1, 20%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "txt foto"
+    ;
+}
+
+
+
+
+.txt{
+    grid-area: txt ;
+
+}
+
+.foto{
+    grid-area: foto;
+}
